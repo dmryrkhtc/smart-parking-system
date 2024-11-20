@@ -5,6 +5,7 @@ import Home from './components/Home'; // Home bileşenini import ettik
 import TechnicalDetails from './components/TechnicalDetails';
 import ProjectProcesses from './components/ProjectProcesses';
 import Gallery from './components/Gallery';
+import PresentationPoster from './components/PresentationPoster';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TechnicalDetails/>
       <ProjectProcesses/>
       <Gallery/>
+      <PresentationPoster></PresentationPoster>
     </div>
   );
 }
