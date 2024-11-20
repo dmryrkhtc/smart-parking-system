@@ -1,0 +1,49 @@
+/* ProjectProcesses.css */
+.project-processes-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.project-processes-header {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-processes-header h1 {
+    color: #2c3e50;
+}
+
+.project-processes-header p {
+    font-size: 16px;
+    color: #34495e;
+}
+
+.development-section, .challenges-section {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+ol li, ul li {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #e74c3c;
+}
