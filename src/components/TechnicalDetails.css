@@ -1,0 +1,55 @@
+/* TechnicalDetails.css */
+.technical-details-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.technical-details-header {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.technical-details-header h1 {
+    color: #2c3e50;
+}
+
+.technical-details-header p {
+    font-size: 16px;
+    color: #34495e;
+}
+
+.hardware-section, .software-section, .code-section {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: monospace;
+    color: #333;
+    overflow-x: auto;
+}
