@@ -1,7 +1,7 @@
 // Home.jsx
 import React from 'react';
 import './Home.css'; // CSS dosyasını import ediyoruz
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className="home-container">
@@ -20,9 +20,14 @@ const Home = () => {
                 <h2>Ekip Üyeleri</h2>
                 <ul>
 
-                    <li> Hatice Demiryürek</li>
-                    <li>Sıla Kasalı</li>
-                    <li>Furkan Öger</li><li>Melike Akyol</li><li>Beyza Busenur Çelik</li><li>Esra Turan</li><li>Elif Dağlar</li><li>Muhammed Emin Doğan</li><li>Emir Karakaş</li>
+                    <li><Link to="/hatice">Hatice Demiryürek</Link></li>
+                    <li><Link to="/sila">Sıla Kasalı</Link></li>
+                    <li><Link to="/furkan">Furkan Öger</Link></li>
+                    <li><Link to="/elif">Elif Dağlar</Link></li>
+                    <li><Link to="/beyza">Beyza Busenur Çelik</Link></li>
+                    <li><Link to="/esra">Esra Turan</Link></li>
+                    <li><Link to="/melike">Melike Akyol</Link></li>
+                    <li><Link to="/emir">Emir Karakaş</Link></li>
                 </ul>
             </section>
         </div>
