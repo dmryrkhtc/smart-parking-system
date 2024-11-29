@@ -1,49 +1,50 @@
-/* ProjectProcesses.css */
 .project-processes-container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background-image: url('../gorsel/karisik.jpg'); /* Orijinal boyutta arka plan */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  color: #000000;
 }
 
 .project-processes-header {
-    text-align: center;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.664);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
 .project-processes-header h1 {
-    color: #2c3e50;
-}
+  font-size: 3rem;
+  color: #3261e1; /* Mavi başlık */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Yazıya gölge */}
 
 .project-processes-header p {
-    font-size: 16px;
-    color: #34495e;
+  font-size: 1.2rem;
+  color: #333; /* Siyah açıklama yazısı */
 }
 
-.development-section, .challenges-section {
-    margin-top: 30px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fdfdfd;
+.development-section, 
+.challenges-section {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.696); /* Yarı opak beyaz */
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
 h2 {
-    color: #3498db;
-    margin-bottom: 10px;
-}
-
-ol, ul {
-    padding-left: 20px;
+  color: #3261e1; /* Mavi başlık */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 ol li, ul li {
-    font-size: 16px;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-ul li strong {
-    color: #e74c3c;
+  font-size: 1rem;
+  color: #333; /* Siyah liste öğeleri */
+  line-height: 1.6;
 }

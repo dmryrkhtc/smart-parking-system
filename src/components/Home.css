@@ -4,36 +4,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../gorsel/home.webp'); /* Arka plan resmini ekliyoruz */
+  background-image: url('../gorsel/home.webp'); /* Arka plan resmi */
   background-size: cover; /* Resmin sayfayı kaplamasını sağlıyoruz */
   background-position: center; /* Resmi ortalıyoruz */
   background-repeat: no-repeat; /* Resmin tekrarlamasını engelliyoruz */
-  color: rgb(0, 0, 0); /* Yazı rengini arka plana uygun hale getiriyoruz */
-  text-align: center; /* Yazıları ortalıyoruz */
+  color: #000; /* Yazılar için koyu renk */
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
 }
 
 .home-header h1 {
-  font-size: 2rem;
+  font-size: 3rem; /* Büyük başlık */
   margin-bottom: 1rem;
+  color: #3261e1; /* Mavi başlık */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Yazıya gölge */
+ 
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
 .home-header p {
-  font-size: 1.2rem;
-}
-.team-section{
- 
-  padding: 10px;
-  border-radius: 10px;
-  margin: 20px;
-  font-size: 15px;
-
-
+  font-size: 1.5rem;
+  max-width: 800px; /* Yazıyı genişlikte sınırla */
+  line-height: 1.6; /* Okunabilirlik için satır arası */
+  color: #000000; /* Daha kontrast yazı rengi */
 }
 
- .goal-section {
- 
-
-  border-radius: 10px;
-  margin: 20px;
-  font-size: 20px;
+img {
+  max-width: 100%; /* Görselleri kutusuna sığdır */
+  height: auto; /* Oranları koru */
+  object-fit: contain; /* Görselin net gözükmesini sağla */
 }

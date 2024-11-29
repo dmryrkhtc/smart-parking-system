@@ -1,44 +1,65 @@
-/* Gallery.css */
 .gallery-container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background-image: url('../gorsel/kablo.webp');
+  background-size: cover; /* Resim orijinal boyutunda kalır */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2; /* Yüklenme sırasında temiz bir arka plan */
+  color: #2c3e50;
 }
 
 .gallery-header {
-    text-align: center;
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.679); /* Yarı opak beyaz arka plan */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
 }
 
 .gallery-header h1 {
-    color: #2c3e50;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #3261e1; /* Mavi başlık */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Yazıya gölge */
 }
 
 .gallery-header p {
-    font-size: 16px;
-    color: #34495e;
+  font-size: 1.2rem;
+  color: #000; /* Açıklama siyah renk */
 }
 
-.photos-section, .videos-section {
-    margin-top: 30px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fdfdfd;
+.photos-section,
+.videos-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.681); /* Yarı opak beyaz */
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
-.photo-grid, .video-grid {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
+.photo-grid,
+.video-grid {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.photo-grid img, .video-grid video {
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+.photo-grid img,
+.video-grid video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-grid img:hover,
+.video-grid video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
 }

@@ -14,11 +14,15 @@ const TechnicalDetails = () => {
                 <h2>Kullanılan Donanım Bileşenleri</h2>
                 <ul>
                     <li>Raspberry Pi 3</li>
-                    <li>Ultrasonik Sensör (HC-SR04)</li>
+                    <li>Ultrasonik Mesafe Ölçüm Sensörü (HC-SR04)</li>
                     <li>LED Göstergeler</li>
                     <li>Buzzer</li>
-                    <li>12V Servo Motor</li>
-                    <li>Bluetooth Modülü (HC-05)</li>
+                    <li>SG90 Servo Motor</li>
+                    <li>VGA to HDMI</li>
+                    <li>LCD Ekran </li>
+                    <li>IR Alıcı-Verici Sensör</li>
+                    <li>RC522 RFID Kartı</li>
+                    <li>ESP32</li>
                 </ul>
             </section>
 
