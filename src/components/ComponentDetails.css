@@ -1,0 +1,25 @@
+.component-details-container {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .component-details-container img {
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .component-details-container h1 {
+    color: #3261e1;
+    margin-bottom: 20px;
+  }
+  
+  .component-details-container p {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  

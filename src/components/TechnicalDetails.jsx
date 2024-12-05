@@ -1,8 +1,22 @@
-// TechnicalDetails.jsx
+
 import React from 'react';
+import { Link } from 'react-router-dom'; // React Router Link kullanımı için
 import './TechnicalDetails.css'; // CSS dosyasını import ediyoruz
 
 const TechnicalDetails = () => {
+    const components = [
+        { name: "Raspberry Pi 3", path: "/component-details/raspberry-pi-3" },
+        { name: "Ultrasonik Mesafe Ölçüm Sensörü", path: "/component-details/ultrasonik-sensor" },
+        { name: "LED Göstergeler", path: "/component-details/led-gostergeler" },
+        { name: "Buzzer", path: "/component-details/buzzer" },
+        { name: "SG90 Servo Motor", path: "/component-details/servo-motor" },
+        { name: "VGA to HDMI", path: "/component-details/vga-hdmi" },
+        { name: "LCD Ekran", path: "/component-details/lcd-ekran" },
+        { name: "IR Alıcı-Verici Sensör", path: "/component-details/ir-sensor" },
+        { name: "RC522 RFID Kartı", path: "/component-details/rc522-rfid" },
+        { name: "ESP32", path: "/component-details/esp32" },
+    ];
+
     return (
         <div className="technical-details-container">
             <header className="technical-details-header">
@@ -13,16 +27,11 @@ const TechnicalDetails = () => {
             <section className="hardware-section">
                 <h2>Kullanılan Donanım Bileşenleri</h2>
                 <ul>
-                    <li>Raspberry Pi 3</li>
-                    <li>Ultrasonik Mesafe Ölçüm Sensörü (HC-SR04)</li>
-                    <li>LED Göstergeler</li>
-                    <li>Buzzer</li>
-                    <li>SG90 Servo Motor</li>
-                    <li>VGA to HDMI</li>
-                    <li>LCD Ekran </li>
-                    <li>IR Alıcı-Verici Sensör</li>
-                    <li>RC522 RFID Kartı</li>
-                    <li>ESP32</li>
+                    {components.map((component, index) => (
+                        <li key={index}>
+                            <Link to={component.path}>{component.name}</Link>
+                        </li>
+                    ))}
                 </ul>
             </section>
 
@@ -37,7 +46,7 @@ const TechnicalDetails = () => {
             <section className="code-section">
                 <h2>Yazılım Kodları</h2>
                 <p>
-                    Projenin yazılım kodları, Raspberry Pİ ide kullanılarak yazılmıştır. Aşağıda temel bir kod yapısı örneği(şimdilik orijinal kodumuz sonradan eklenecektir.) verilmiştir:
+                    Projenin yazılım kodları, Raspberry Pi ide kullanılarak yazılmıştır. Aşağıda temel bir kod yapısı örneği(şimdilik orijinal kodumuz sonradan eklenecektir.) verilmiştir:
                 </p>
                 <pre>
                     {`// Sensör verilerini okuma

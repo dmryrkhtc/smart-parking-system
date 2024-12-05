@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
-import TechnicalDetails from './components/TechnicalDetails';
+
 import ProjectProcesses from './components/ProjectProcesses';
 import Gallery from './components/Gallery';
 import PresentationPoster from './components/PresentationPoster';
@@ -14,6 +14,9 @@ import Elif from './members/elif';
 import Sila from './members/sila';
 import Beyza from './members/beyza';
 import Furkan from './members/furkan';
+import TechnicalDetails from './components/TechnicalDetails';
+import ComponentDetails from './components/ComponentDetails';
+
 
 
 
@@ -33,7 +36,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/technical-details" element={<TechnicalDetails />} />
+        
           <Route path="/project-processes" element={<ProjectProcesses />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/presentation-poster" element={<PresentationPoster />} />
@@ -45,6 +48,9 @@ function App() {
           <Route path='/melike' element={<Melike />} />
           <Route path='/esra' element={<Esra />} />
           <Route path='/furkan' element={<Furkan />} />
+          <Route path="/technical-details" element={<TechnicalDetails />} />
+                <Route path="/component-details/:componentId" element={<ComponentDetails />} />
+           
 
           
 
