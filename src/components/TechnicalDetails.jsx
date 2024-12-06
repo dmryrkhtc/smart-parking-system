@@ -10,11 +10,12 @@ const TechnicalDetails = () => {
         { name: "LED Göstergeler", path: "/component-details/led-gostergeler" },
         { name: "Buzzer", path: "/component-details/buzzer" },
         { name: "SG90 Servo Motor", path: "/component-details/servo-motor" },
-        { name: "VGA to HDMI", path: "/component-details/vga-hdmi" },
+        { name: "VGA to HDMI Dönüştürücü", path: "/component-details/vga-to-hdmi" },
         { name: "LCD Ekran", path: "/component-details/lcd-ekran" },
-        { name: "IR Alıcı-Verici Sensör", path: "/component-details/ir-sensor" },
-        { name: "RC522 RFID Kartı", path: "/component-details/rc522-rfid" },
+        { name: "IR Alıcı-Verici Sensör", path: "/component-details/iralici-verici-sensor" },
+        { name: "RC522 RFID Kartı", path: "/component-details/rfid-karti" },
         { name: "ESP32", path: "/component-details/esp32" },
+        { name: "LCD I2C Dönüştürücü", path: "/component-details/lcd-i2c" },
     ];
 
     return (

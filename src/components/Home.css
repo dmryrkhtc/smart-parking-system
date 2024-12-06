@@ -13,6 +13,14 @@
   font-family: 'Roboto', sans-serif;
   padding: 20px;
 }
+.home-header{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.634);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
 
 .home-header h1 {
   font-size: 3rem; /* Büyük başlık */
@@ -26,6 +34,7 @@
 
 .home-header p {
   font-size: 1.5rem;
+  
   max-width: 800px; /* Yazıyı genişlikte sınırla */
   line-height: 1.6; /* Okunabilirlik için satır arası */
   color: #000000; /* Daha kontrast yazı rengi */
@@ -35,4 +44,20 @@ img {
   max-width: 100%; /* Görselleri kutusuna sığdır */
   height: auto; /* Oranları koru */
   object-fit: contain; /* Görselin net gözükmesini sağla */
+}
+.goal-section{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.634);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+.team-section{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.634);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
 }

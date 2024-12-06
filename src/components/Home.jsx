@@ -7,14 +7,14 @@ const Home = () => {
         <div className="home-container">
             <header className="home-header">
                 <h1>Akıllı Park Sistemi</h1>
-                <p>Bu proje, park alanlarını daha verimli yönetmeyi amaçlayan bir akıllı park sistemini geliştirmeyi hedefliyor.</p>
+                <p> Akıllı Park Sistemi, park alanlarının daha verimli yönetilmesini sağlayan, teknolojiyi kullanarak araçların park edilme süreçlerini kolaylaştıran ve park yerlerinin doluluk durumunu gerçek zamanlı izleyen bir çözümdür.</p>
             </header>
 
 
 
             <section className="goal-section">
                 <h2>Proje Amacı</h2>
-                <p>Projemiz, sensörler aracılığıyla sesli ve görsel geri bildirimler vererek arabayı kolay park etmemize yardımcı oluyor.</p>
+                <p>Akıllı park sisteminin temel amacı, park yerlerinin yönetimini daha verimli hale getirerek araçların park yeri bulma süreçlerini hızlandırmak, trafiği rahatlatmak, çevresel etkileri azaltmak ve kullanıcıların daha hızlı ve kolay bir şekilde park etmelerini sağlamaktır. Bu, şehir içi yaşamı daha düzenli ve verimli hale getirirken, zaman, enerji ve kaynak tasarrufu sağlayarak sürdürülebilir bir ulaşım altyapısı sunar.</p>
             </section>
             <section className="team-section">
                 <h2>Ekip Üyeleri</h2>
