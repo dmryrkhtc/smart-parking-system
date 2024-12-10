@@ -23,6 +23,9 @@ const Home = () => {
                     <li><Link to="/hatice">Hatice Demiryürek</Link></li>
                     <li><Link to="/sila">Sıla Kasalı</Link></li>
                     <li><Link to="/furkan">Furkan Öger</Link></li>
+                    <li><Link to="/emin">Muhammed Emin Doğan</Link></li>
+
+
                     <li><Link to="/elif">Elif Dağlar</Link></li>
                     <li><Link to="/beyza">Beyza Busenur Çelik</Link></li>
                     <li><Link to="/esra">Esra Turan</Link></li>

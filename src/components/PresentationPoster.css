@@ -3,10 +3,11 @@
   padding: 20px;
   background-color: #f9fbfd;
   color: #2c3e50;
-  background-image: url('../gorsel/arac.webp');
+  background-image: url('../gorsel/kalp.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation: fadeIn 1.0s ease-in-out;
 }
 
 .presentation-header {
@@ -16,6 +17,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
+  box-sizing: border-box;
 }
 
 .presentation-header h1 {
@@ -37,12 +39,19 @@
   border-radius: 10px;
   background-color: #ffffff7b;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
+  box-sizing: border-box;
 }
 
 .download-section h2 {
-  color: #3498db;
+  color: rgb(50, 97, 225);
   font-size: 1.8rem;
-  margin-bottom: 15px;
+  margin-bottom: 205px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.255); 
+  
+
+}
+.download-section li a{
+  margin-top: 5px;
 }
 
 ul {
@@ -52,17 +61,20 @@ ul {
 
 ul li {
   font-size: 1rem;
+  
   margin-bottom: 10px;
 }
 
 ul li a {
-  color: #3498db;
+  color: #1474b5;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+  margin-top: 5px;
+ 
 }
 
 ul li a:hover {
-  color: #e74c3c;
-  text-decoration: underline;
+  color: #061293;
+  text-decoration: none;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
-
 import ProjectProcesses from './components/ProjectProcesses';
 import Gallery from './components/Gallery';
 import PresentationPoster from './components/PresentationPoster';
@@ -16,6 +15,7 @@ import Beyza from './members/beyza';
 import Furkan from './members/furkan';
 import TechnicalDetails from './components/TechnicalDetails';
 import ComponentDetails from './components/ComponentDetails';
+import Emin from './members/emin';
 
 
 
@@ -46,6 +46,7 @@ function App() {
           <Route path='/sila' element={<Sila />} />
           <Route path='/beyza' element={<Beyza />} />
           <Route path='/melike' element={<Melike />} />
+          <Route path='/emin' element={<Emin />} />
           <Route path='/esra' element={<Esra />} />
           <Route path='/furkan' element={<Furkan />} />
           <Route path="/technical-details" element={<TechnicalDetails />} />
