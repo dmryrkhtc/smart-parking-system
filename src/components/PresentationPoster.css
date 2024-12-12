@@ -1,59 +1,106 @@
+
+/* Genel Sunum Konteyneri */
 .presentation-container {
   font-family: 'Roboto', sans-serif;
   padding: 20px;
   background-color: #f9fbfd;
   color: #2c3e50;
-  background-image: url('../gorsel/kalp.jpeg');
+  background-image: url('../gorsel/poste.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   animation: fadeIn 1.0s ease-in-out;
 }
 
+/* Fade-in Animasyonu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sunum Başlığı */
 .presentation-header {
   text-align: center;
-  background-color: rgba(234, 242, 248, 0.727); /* Opak mavi arka plan */
+  background-color: rgba(234, 242, 248, 0.593);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+  animation: slideDown 1.0s ease-in-out;
+}
+
+/* Slide-down Animasyonu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .presentation-header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: rgb(50, 97, 225);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Yazıya gölge */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .presentation-header p {
   font-size: 1.2rem;
-  color: #555;
+  color: #000000;
 }
 
+/* İndirme Bölümü */
 .download-section {
   margin-top: 30px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  background-color: #ffffff7b;
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  background-color: #ffffff7b; /* Yarı saydam beyaz */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 1.0s ease-in-out;
+  margin-bottom: 200px;
 }
 
+/* Slide-in Animasyonu */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* İndirme Bölümü Hover Efekti */
+.download-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* İndirme Başlığı */
 .download-section h2 {
   color: rgb(50, 97, 225);
   font-size: 1.8rem;
-  margin-bottom: 205px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.255); 
-  
-
-}
-.download-section li a{
-  margin-top: 5px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.255);
 }
 
+/* Liste ve Bağlantılar */
 ul {
   list-style-type: none;
   padding: 0;
@@ -61,7 +108,6 @@ ul {
 
 ul li {
   font-size: 1rem;
-  
   margin-bottom: 10px;
 }
 
@@ -69,12 +115,28 @@ ul li a {
   color: #1474b5;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
-  margin-top: 5px;
- 
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 ul li a:hover {
   color: #061293;
   text-decoration: none;
+  transform: scale(1.05);
+}
+.poster-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.poster-image {
+  width: 80%; /* Genişlik ayarı, gerekirse % ile oynayabilirsiniz */
+  max-width: 800px; /* Maksimum genişlik */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.poster-image:hover {
+  transform: scale(0.995);
 }

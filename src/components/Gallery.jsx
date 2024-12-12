@@ -13,10 +13,14 @@ const Gallery = () => {
             <section className="photos-section">
                 <h2>Fotoğraflar</h2>
                 <div className="photo-grid">
-                    <p> sonradan eklenecektir</p>
-                    <img src="path-to-photo1.jpg" alt="Proje Fotoğrafı 1" />
-                    <img src="path-to-photo2.jpg" alt="Proje Fotoğrafı 2" />
-                    <img src="path-to-photo3.jpg" alt="Proje Fotoğrafı 3" />
+                    <img src="/gorsel/gal1.jpg" alt="Proje Fotoğrafı 1" />
+                    <img src="/gorsel/gal2.jpg" alt="Proje Fotoğrafı 2" />
+                    <img src="/gorsel/gal3.jpg" alt="Proje Fotoğrafı 3" />
+                    <img src="/gorsel/gal4.jpg" alt="Proje Fotoğrafı 4" />
+                    <img src="/gorsel/gal5.jpg" alt="Proje Fotoğrafı 5" />
+                    <img src="/gorsel/gal6.jpg" alt="Proje Fotoğrafı 6" />
+                    <img src="/gorsel/gal7.jpg" alt="Proje Fotoğrafı 7" />
+                    <img src="/gorsel/gal8.jpg" alt="Proje Fotoğrafı 8" />
                 </div>
             </section>
 

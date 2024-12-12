@@ -12,7 +12,7 @@ const ProjectProcesses = () => {
 
             <section className="development-section">
                 <h2>Geliştirme Aşamaları</h2>
-                <ol>
+                <ol style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     <h3>Araştırma ve Planlama</h3>
                     <li>Projenin işleyişi ile ilgili detaylı araştırma ve planlama yapıldı.</li>
                     <li>Kullanılacak ekipmanların özellikleri belirlendi ve tanıtıldı</li>
@@ -45,9 +45,9 @@ const ProjectProcesses = () => {
 
             <section className="challenges-section">
                 <h2>Karşılaşılan Zorluklar ve Çözümler</h2>
-                <ul>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     <li><strong>Zorluk 1:</strong>Raspberry Pi bozuk olduğundan klavye ve mouse bağlantısı yapılamadı. </li>
-                    <li><strong>Çözüm 1:</strong> Yeni Raspberry Pi satın alındı</li>
+                    <li><strong>Çözüm 1:</strong> Yeni Raspberry Pi alındı.</li>
                     <li><strong>Zorluk 2:</strong> Buzzer’ın sesini ayarlarken ses sıklığı ayırt edilemiyordu. Mesafeye göre ses
                         ayrımını belirginleştirmekte zorluk yaşandı .</li>
                     <li><strong>Çözüm 2:</strong>  Bunun sonucunda deneme yanılma ile frekans yüzdesi %50 ye düşürüldü.</li>

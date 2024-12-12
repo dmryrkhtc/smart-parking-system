@@ -1,0 +1,102 @@
+/* Profile container styles */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Profile content styles */
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px; /* Wider container for larger image */
+    padding: 30px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Drop shadow */
+    text-align: center;
+    box-sizing: border-box;
+   
+}
+
+/* Profile image styles */
+.profile-image-container {
+    width: 150px; /* Increased size for larger circle */
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Circular container */
+    overflow: hidden; /* Ensures image stays inside the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for the circle */
+    border: 4px solid rgba(255, 255, 255, 0.8); /* White border */
+    transform: scale(1.6); /* Slight zoom-in effect */
+   
+    
+}
+
+.profile-image {
+
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the image */
+.profile-image:hover {
+    transform: scale(4.5); /* Slight zoom-in effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Boxed information styles */
+.info-box {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 1rem;
+    color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styles */
+a {
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #004a99;
+}

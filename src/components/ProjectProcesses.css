@@ -1,51 +1,156 @@
 .project-processes-container {
   font-family: 'Roboto', sans-serif;
   padding: 20px;
-  background-image: url('../gorsel/karisik.jpg'); /* Orijinal boyutta arka plan */
+  background-image: url('../gorsel/karisik.jpg'); /* Arka plan görüntüsü */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
   color: #000000;
   animation: fadeIn 1.0s ease-in-out;
+  min-height: 100vh; /* Tam ekran yüksekliği */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .project-processes-header {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.664);
-  padding: 20px;
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.85); /* Yarı opak beyaz */
+  padding: 30px;
+  border-radius: 15px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Gölge */
 }
 
 .project-processes-header h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #3261e1; /* Mavi başlık */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Yazıya gölge */}
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Gölgeli başlık */
+  margin-bottom: 15px;
+}
 
 .project-processes-header p {
-  font-size: 1.2rem;
-  color: #333; /* Siyah açıklama yazısı */
+  font-size: 1.5rem;
+  color: #444;
+  line-height: 1.6;
 }
 
 .development-section, 
 .challenges-section {
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.696); /* Yarı opak beyaz */
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9); /* Şeffaf beyaz arka plan */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Hafif gölge */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.development-section:hover, 
+.challenges-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover efekti */
 }
 
 h2 {
   color: #3261e1; /* Mavi başlık */
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 ol li, ul li {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #333; /* Siyah liste öğeleri */
+  line-height: 1.8;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+ol li::before, ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3261e1; /* Liste noktası rengi */
+  font-size: 1.5rem;
+}
+.project-processes-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background-image: url('../gorsel/karisik.jpg'); /* Arka plan görüntüsü */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  color: #000000;
+  animation: fadeIn 1.0s ease-in-out;
+  min-height: 100vh; /* Tam ekran yüksekliği */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.project-processes-header {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85); /* Yarı opak beyaz */
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Gölge */
+}
+
+.project-processes-header h1 {
+  font-size: 3.5rem;
+  color: #3261e1; /* Mavi başlık */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Gölgeli başlık */
+  margin-bottom: 15px;
+}
+
+.project-processes-header p {
+  font-size: 1.5rem;
+  color: #444;
   line-height: 1.6;
+}
+
+.development-section, 
+.challenges-section {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9); /* Şeffaf beyaz arka plan */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Hafif gölge */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.development-section:hover, 
+.challenges-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover efekti */
+}
+
+h2 {
+  color: #3261e1; /* Mavi başlık */
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+ol li, ul li {
+  font-size: 1.2rem;
+  color: #333; /* Siyah liste öğeleri */
+  line-height: 1.8;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+ol li::before, ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3261e1; /* Liste noktası rengi */
+  font-size: 1.5rem;
 }

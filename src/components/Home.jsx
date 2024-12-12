@@ -18,7 +18,7 @@ const Home = () => {
             </section>
             <section className="team-section">
                 <h2>Ekip Üyeleri</h2>
-                <ul>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
 
                     <li><Link to="/hatice">Hatice Demiryürek</Link></li>
                     <li><Link to="/sila">Sıla Kasalı</Link></li>

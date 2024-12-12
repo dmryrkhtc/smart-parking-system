@@ -25,6 +25,11 @@ body {
   padding: 40px;
   animation: fadeIn 1.0s ease-in-out; /* Fade-in animasyonu */
 }
+.home-container .home-header:hover{
+ transform: scale(1.0);
+ transition: transform 0.9s ease, box-shadow 0.3s ease;
+
+}
 
 /* Fade-in Animasyonu */
 @keyframes fadeIn {
@@ -58,10 +63,7 @@ body {
 
 }
 
-.home-header h1:hover {
-  transform: scale(1.1);
-  color: #1e44a4;
-}
+
 
 .home-header p {
   font-size: 1.5rem;
@@ -150,4 +152,9 @@ button {
 button:hover {
   background-color: #1a45b0;
   transform: translateY(-2px);
+}
+.team-section ul {
+  list-style: none !important; /* Daha güçlü hale getirir */
+  padding: 0;
+  margin: 0;
 }

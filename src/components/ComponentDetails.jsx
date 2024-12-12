@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom"; // URL parametrelerini almak için
 import "./ComponentDetails.css";
 
+
 // Bileşen verilerini tanımlıyoruz
 const componentData = {
     "raspberry-pi-3": {

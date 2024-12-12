@@ -1,66 +1,116 @@
+/* Gallery Container */
 .gallery-container {
   font-family: 'Roboto', sans-serif;
   padding: 20px;
-  background-image: url('../gorsel/kablo.webp');
-  background-size: cover; /* Resim orijinal boyutunda kalır */
+  background-image: url('../gorsel/kablo.webp'); /* Arka plan resmi */
+  background-size: cover; /* Resmi kapsayacak şekilde ayarlar */
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #f2f2f2; /* Yüklenme sırasında temiz bir arka plan */
-  color: #2c3e50;
-  animation: fadeIn 1.0s ease-in-out;
+  background-color: #f2f2f2; /* Yedek arka plan rengi */
+  color: #2c3e50; /* Yazı rengi */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animasyonu */
 }
 
+/* Fade-in Animasyonu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gallery Header */
 .gallery-header {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.679); /* Yarı opak beyaz arka plan */
+  background-color: rgba(255, 255, 255, 0.7); /* Şeffaf arka plan */
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideDown 1s ease-in-out; /* Slide-down animasyonu */
 }
 
 .gallery-header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Daha uygun başlık boyutu */
   margin-bottom: 1rem;
-  color: #3261e1; /* Mavi başlık */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Yazıya gölge */
+  color: #3261e1; /* Başlık rengi */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Hafif gölge efekti */
 }
 
 .gallery-header p {
   font-size: 1.2rem;
-  color: #000; /* Açıklama siyah renk */
+  color: #000; /* Açıklama rengi */
 }
 
+/* Sections: Photos and Videos */
 .photos-section,
 .videos-section {
   margin-top: 30px;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.681); /* Yarı opak beyaz */
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8); /* Hafif şeffaf arka plan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş efekti */
+  animation: slideIn 1s ease-in-out; /* Slide-in animasyonu */
 }
 
+/* Sections Hover Effect */
+.photos-section:hover,
+.videos-section:hover {
+  transform: translateY(-5px); /* Hafif yukarı çıkma efekti */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge */
+}
+
+/* Slide-in Animasyonu */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Grids: Photos and Videos */
 .photo-grid,
 .video-grid {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 10px;
+  display: grid; /* Grid düzeni */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Esnek sütun yapısı */
+  gap: 20px; /* Elemanlar arası boşluk */
+  justify-items: center; /* Elemanları yatayda ortalar */
+  margin-top: 20px;
 }
 
+/* Media Items */
 .photo-grid img,
 .video-grid video {
-  max-width: 100%;
+  width: 100%; /* Elemanlar sütun genişliğini doldurur */
+  max-width: 250px; /* Maksimum genişlik */
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px; /* Yuvarlatılmış köşeler */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş efekti */
 }
 
+/* Media Hover Effects */
 .photo-grid img:hover,
 .video-grid video:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  transform: scale(1.05); /* Büyütme efekti */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge */
+}
+
+/* Medya Açıklama Başlıkları */
+.photos-section h2,
+.videos-section h2 {
+  font-size: 2rem; /* Alt başlık boyutu */
+  color: #107be5; /* Alt başlık rengi */
+  margin-bottom: 15px;
+  text-align: center;
 }

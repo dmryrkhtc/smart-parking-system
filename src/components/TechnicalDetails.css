@@ -1,3 +1,4 @@
+/* Teknik Detaylar Konteyner */
 .technical-details-container {
   font-family: 'Roboto', sans-serif;
   padding: 20px;
@@ -9,7 +10,20 @@
   color: #000000;
   animation: fadeIn 1.0s ease-in-out;
 }
+   
+/* Fade-in Animasyonu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Teknik Detaylar Başlık */
 .technical-details-header {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.634);
@@ -17,6 +31,19 @@
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
+  animation: slideDown 1.0s ease-in-out;
+}
+
+/* Slide-down Animasyonu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .technical-details-header h1 {
@@ -30,16 +57,40 @@
   color: #333; /* Siyah açıklama yazısı */
 }
 
-.hardware-section, 
-.software-section, 
+/* Hover ve Bölüm Efektleri */
+.hardware-section,
+.software-section,
 .code-section {
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.719);
   box-shadow: 0 4px 8px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 1.0s ease-in-out;
 }
 
+/* Hover Efekti */
+.hardware-section:hover,
+.software-section:hover,
+.code-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Slide-in Animasyonu */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Kod Blokları */
 pre {
   background-color: #f4f4f4;
   padding: 15px;
@@ -50,4 +101,14 @@ pre {
   overflow-x: auto;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.model-image {
+  width: 80%; /* Genişlik ayarı, gerekirse % ile oynayabilirsiniz */
+  max-width: 800px; /* Maksimum genişlik */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.model-image:hover {
+  transform: scale(0.995);
+}

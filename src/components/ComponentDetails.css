@@ -3,7 +3,11 @@
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
- 
+  /* background-image: url('/gorsel/detay.webp'); /* Arka plan resmi */
+  /*background-size: cover; /* Resmi tam olarak kapsatır */
+  /*background-position: center; /* Resmin ortalanmasını sağlar */
+ /* background-repeat: no-repeat; /*Resmin tekrar etmemesini sağlar */
+  opacity: 0;
   opacity: 0;
   transform: translateY(20px); /* Hafif aşağıda başlar */
   animation: fadeInUp 1s ease forwards;

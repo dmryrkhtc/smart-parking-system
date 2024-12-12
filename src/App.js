@@ -25,7 +25,7 @@ function App() {
     <Router>
       <div className="App">
         <nav className="navbar">
-          <ul>
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
             <li><Link to="/">Ana Sayfa</Link></li>
             <li><Link to="/technical-details">Teknik Detaylar</Link></li>
             <li><Link to="/project-processes">Proje Süreçleri</Link></li>
