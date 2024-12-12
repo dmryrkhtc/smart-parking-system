@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/smart-parking-system/static/css/main.e3021b55.css",
+    "main.js": "/smart-parking-system/static/js/main.fa0a80a7.js",
+    "static/js/453.38dd00e4.chunk.js": "/smart-parking-system/static/js/453.38dd00e4.chunk.js",
+    "static/media/esra.jpg": "/smart-parking-system/static/media/esra.61ef763a0be342eb551a.jpg",
+    "static/media/home.jpeg": "/smart-parking-system/static/media/home.32e55f42c81789e569b6.jpeg",
+    "static/media/poster.jpg": "/smart-parking-system/static/media/poster.881ae667e55b4fcb91d4.jpg",
+    "static/media/beyza.jpg": "/smart-parking-system/static/media/beyza.b959c3b9f200f178c086.jpg",
+    "static/media/melike.jpg": "/smart-parking-system/static/media/melike.c82302fa60be849f7fca.jpg",
+    "static/media/sila.jpg": "/smart-parking-system/static/media/sila.6005a90ac4d3557fe069.jpg",
+    "static/media/hatice.jpg": "/smart-parking-system/static/media/hatice.e16bbc8301e62fbe4503.jpg",
+    "static/media/emin.jpg": "/smart-parking-system/static/media/emin.200d71f1362a76cdadfc.jpg",
+    "static/media/furkan.jpg": "/smart-parking-system/static/media/furkan.a4e95671bd57b7e70e0a.jpg",
+    "static/media/sensor.jpeg": "/smart-parking-system/static/media/sensor.c944b18d29eb3af8e8e4.jpeg",
+    "static/media/elif.jpg": "/smart-parking-system/static/media/elif.9eadf6df7b4b66f53ba4.jpg",
+    "static/media/emir.jpg": "/smart-parking-system/static/media/emir.c06e200b37ea874f5d77.jpg",
+    "static/media/karisik.jpg": "/smart-parking-system/static/media/karisik.f00168e4dd7af646eb97.jpg",
+    "static/media/mikroişlemci.jpg": "/smart-parking-system/static/media/mikroişlemci.cc67d7ccb701ee3f8780.jpg",
+    "static/media/detay.webp": "/smart-parking-system/static/media/detay.b62cec550b09e6bbcc57.webp",
+    "static/media/kablo.webp": "/smart-parking-system/static/media/kablo.f8fd7451de0ed167bd40.webp",
+    "static/media/poste.webp": "/smart-parking-system/static/media/poste.a724cb3a684cfa77bf67.webp",
+    "index.html": "/smart-parking-system/index.html",
+    "main.e3021b55.css.map": "/smart-parking-system/static/css/main.e3021b55.css.map",
+    "main.fa0a80a7.js.map": "/smart-parking-system/static/js/main.fa0a80a7.js.map",
+    "453.38dd00e4.chunk.js.map": "/smart-parking-system/static/js/453.38dd00e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3021b55.css",
+    "static/js/main.fa0a80a7.js"
+  ]
+}
